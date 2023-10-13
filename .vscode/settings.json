@@ -1,18 +1,17 @@
 {
-  "files.eol": "\n",
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "prettier.enable": false,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "vue",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "json",
+    "jsonc",
+    "json5"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "unocss.root": "site"
 }

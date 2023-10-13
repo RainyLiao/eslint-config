@@ -1,0 +1,42 @@
+{
+  "name": "@rifend/eslint-config",
+  "version": "1.0.0",
+  "description": "RainyLiao's ESLint config",
+  "author": "RainyLiao liaowenrun@gmail.com",
+  "license": "ISC",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --clean --dts",
+    "stub": "tsup src/index.ts --format esm",
+    "dev": "tsup src/index.ts --format esm,cjs --watch",
+    "lint": "pnpm run stub && eslint .",
+    "prepack": "nr build",
+    "release": "bumpp && pnpm publish",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "dependencies": {
+    "eslint-config-flat-gitignore": "^0.1.0",
+    "eslint-define-config": "^1.24.1",
+    "eslint-plugin-jsonc": "^2.10.0",
+    "jsonc-eslint-parser": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "tsup": "^7.2.0"
+  }
+}

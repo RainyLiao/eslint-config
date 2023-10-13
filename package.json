@@ -1,8 +1,18 @@
 {
   "name": "eslint-config",
+  "type": "module",
   "version": "1.0.0",
   "description": "packages related to code style",
-  "scripts": {},
   "author": "RainyLiao",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "nr -F \"@rifend/eslint-config\" dev & eslint-flat-config-viewer",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@rifend/eslint-config": "workspace:*",
+    "eslint": "^8.51.0",
+    "eslint-flat-config-viewer": "^0.1.0",
+    "typescript": "^5.2.2"
+  }
 }
