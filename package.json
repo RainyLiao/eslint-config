@@ -2,6 +2,7 @@
   "name": "eslint-config",
   "type": "module",
   "version": "1.0.0",
+  "private": true,
   "description": "packages related to code style",
   "author": "RainyLiao",
   "license": "MIT",

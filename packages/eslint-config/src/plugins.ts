@@ -1,2 +1,2 @@
-export * as pluginJsonc from 'eslint-plugin-jsonc'
-export { default as parserJsonc } from 'jsonc-eslint-parser'
+export * as pluginReact from 'eslint-plugin-react'
+export * as pluginReactHooks from 'eslint-plugin-react-hooks'
